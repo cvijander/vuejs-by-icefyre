@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+      <a :href="link">Klikni ovde</a>
+      <p>  {{nizA}}</p>
+      <p>{{nizA[1]}}</p>
+       <p>  {{niz1}}</p>
+      <p>{{niz1[2]}}</p>
+       <p>  {{nizObjekata}}</p>
+      <p>{{nizObjekata[1]}}</p>
+
+      <div>
+        <ul>
+            <li  v-for="slova in nizA">{{slova}}</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+            <li  v-for="broj in niz1">{{broj}}</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+            <li  v-for="objekat in nizObjekata">{{objekat}}</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+            <li  v-for="objekat in nizObjekata">{{objekat.name}}  /  {{objekat.age}}</li>
+        </ul>
+      </div>
+
+
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

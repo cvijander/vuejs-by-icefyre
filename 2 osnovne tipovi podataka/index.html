@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osnovni tipovi</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div>
+            <p>{{ name}}</p>
+            <p>{{ number}}</p>
+            <p>{{ booleanTrue}}</p>
+        </div>
+    
+        <div>
+            <button type="button" v-on:click="numberPlus" >Hello ++</button>
+            <button type="button" v-on:click="numberMinus">Hello --</button>
+            <button type="button" @click="notBooleanTrue" >Hello</button>
+         </div>
+    
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
